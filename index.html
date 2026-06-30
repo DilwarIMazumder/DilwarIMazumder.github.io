@@ -1,0 +1,514 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Dilwar Islam Mazumder</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    background:#f5f7fa;
+    color:#333;
+}
+
+.sidebar{
+    width:260px;
+    background:#1f2937;
+    min-height:100vh;
+    padding:20px;
+    position:fixed;
+}
+
+.sidebar h2{
+    color:white;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.sidebar img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+.sidebar ul{
+    list-style:none;
+    margin-top:25px;
+}
+
+.sidebar ul li{
+    margin:15px 0;
+}
+
+.sidebar ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+}
+
+.sidebar ul li a:hover{
+    color:#60a5fa;
+}
+
+.main{
+    margin-left:280px;
+    padding:40px;
+    width:100%;
+}
+
+section{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1,h2{
+    color:#1f2937;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#666;
+}
+
+.pub{
+    margin-bottom:10px;
+}
+
+.contact p{
+    margin:8px 0;
+}
+
+@media(max-width:768px){
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        min-height:auto;
+    }
+
+    .main{
+        margin-left:0;
+    }
+}
+
+.name{
+    font-size:48px;
+    font-weight:800;
+    color:#0f172a;
+    letter-spacing:1px;
+    margin-bottom:10px;
+    font-family:Georgia, serif;
+}
+
+.qualification{
+    font-size:30px;
+    color:#2563eb;
+    font-weight:600;
+    /*font-style:italic;*/
+    margin-bottom:12px;
+    font-family:"Bookman Old Style", "Bookman", "URW Bookman", serif;
+}
+
+.designation{
+    font-size:24px;
+    font-weight:600;
+    color:white;
+    margin-bottom:8px;
+}
+
+.university{
+    font-size:18px;
+    color:white;
+}
+
+.banner{
+    height:350px;
+    background-image:url('C:/Users/U243/Desktop/banner.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+.banner-overlay{
+    position:top;
+    top:10;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.banner-overlay h1{
+    font-size:45px;
+    margin-bottom:10px;
+    color:white;
+    top:10;
+
+    font-family:"Bookman Old Style", "Bookman", "URW Bookman", serif;
+}
+
+}
+
+.banner-overlay p{
+    font-size:22px;
+    margin:5px;
+}
+
+.top-center-info{
+    position: absolute;
+    top: 30px;
+    left: 30px;          /* distance from left edge */
+    text-align: left;    /* left-align text */
+    color: black;
+    width: 80%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <!-- EDIT PROFILE PHOTO -->
+    <img src="profile.jpg" alt="Profile Photo">
+
+    <!-- EDIT NAME -->
+    <h2>Dr. Dilwar Islam Mazumder</h2>
+    
+
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#qualification">Educational Qualification</a></li>
+        <li><a href="#equivalency">Qualification Equivalency</a></li>
+        <li><a href="#fundedResearchProject">Funded Research Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#academy">Mazumder Academy</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="DilwarIMazumderWithDocuments.pdf" target="_blank">Download CV</a></li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+
+<div class="banner">
+    <div class="top-center-info">
+        <h1>Dr. Dilwar Islam Mazumder</h1>
+        <p>MSc, PhD in Mathematics</p>
+        <p>P.G.D.C.A., MTech in IT, BEd, QTS</p>
+        <p><b>Lecturer of Mathematics</b> </p>
+        <p><b>University of Technology and Applied Sciences, Ibri </b></p>          
+        <p><b>Sultanate of Oman </b></p>
+     </div>
+  
+
+    
+</div>
+
+
+<section id="about">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">About Me</h2>
+
+    <p style="margin-top:15px;">
+    Welcome to my academic webpage. I am a Lecturer of Mathematics with
+    interests spanning pure and applied mathematics, relativistic cosmology,
+    machine learning, fuzzy systems. My work focuses on developing mathematical frameworks that connect
+    theoretical foundations with practical applications in science and engineering.
+    </p>
+
+    <br>
+
+    <p>
+    Beyond my research activities, I am deeply committed to teaching,
+    mentoring, and public education. I believe mathematics should be
+    accessible to everyone and strive to inspire students through
+    innovative teaching methods and interdisciplinary learning.
+    </p>
+</section>
+
+
+<section id="qualification">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Educational Qualification</h2>
+
+    <p style="margin-top:15px;">
+<b>ACADEMIC QUALIFICATION IN MATHEMATICS</b><br>
+<ul style="margin-top:15px;margin-left:25px;">
+        <li>Doctorate (<b>PhD</b>) in Mathematics, from University of Science and Technology, Meghalaya, India [2021].<br>
+</li>
+        <li>Master of Science (<b>MSc</b>) in Mathematics, from Gauhati University, India [2003].<br>
+</li>
+        <li>Bachelor of Science (<b>BSc Honours</b>) in Mathematics, from Assam University Silchar, India [1998].<br>
+</li>
+      
+    </ul>
+<br><b>ACADEMIC QUALIFICATION IN COMPUTER APPLICATION / IT </b><br>
+<ul style="margin-top:15px;margin-left:25px;">
+        <li>Post Graduate Diploma in Computer Application (<b>PGDCA</b>) from CDAC, Govt. of India [2004].<br>
+</li>
+        <li>Master of Technology in Information Technology ( <b>MTech in IT</b>), from Tezpur University, india [2008].<br>
+</li>
+    </ul>
+
+<br><b>TEACHING QUALIFICATION </b><br>
+<ul style="margin-top:15px;margin-left:25px;">
+        <li>Bachelor of Education (<b>BEd</b>) from Gauhati University, India [2007].<br>
+</li>
+        <li>Qualified Teaching Status (<b>QTS</b>) from the UK.</li>
+
+    </ul>
+
+</p>
+</section>
+
+
+<section id="equivalency">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Qualification Equivalency</h2>
+
+    <ul style="margin-top:15px;margin-left:25px;">
+        <li>Qualification equivalency and <b>English Profeciency level</b> completed for the <b>UK</b>.</li>
+        <li>Qualification equivalency completed for the <b>USA</b>.</li>
+        <li>Qualification equivalency completed for the Sultanate of <b>OMAN</b>.</li>
+
+    </ul>
+</section>
+
+
+<section id="research">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Research Interests</h2>
+
+    <ul style="margin-top:15px;margin-left:25px;">
+        <li>Relativistic Cosmology</li>
+        <li>Fuzzy Logic</li>
+        <li>Data Mining</li>
+        <li>Machine Learning</li>
+
+    </ul>
+</section>
+
+
+<section id="fundedResearchProject">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Funded Research Projects</h2>
+  <div class="pub">
+    <ul style="margin-top:15px;margin-left:25px;">
+        <li>Completed a research project under TRC, Oman. Project tenure was <b>2 years</b> and the fund value was <b>$13,000</b> entitled "<i>Connecting Tourism Stakeholders Through Mobile Application, Development of A Season Based Predictive Model Of Tourism.</i>"</li><br>
+
+        <li>Ongoing research project entitled "<i>SignSpeak — Empowering Oman Sign Language with Deep Learning Techniques</i>" under TRC, Oman. Project tenure is <b>1 year</b> and the fund value is <b>$7,750.</b></li><br>
+
+       
+ <li>Ongoing research project entitled "<i>Investigating Defense Mechanisms Against Adversarial Attacks in Deep Learning Models</i>" under TRC, Oman. Project tenure is <b>1 year</b> and the fund value is <b>$2,600. </li><br>
+
+        
+
+    </ul>
+</section>
+
+
+
+<section id="publications">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Publications</h2>
+
+    <div class="pub">
+    <ol style="margin-top:15px;margin-left:25px;">
+      <li><b>D.I. Mazumder</b> and  M. Dutta “<b>A Polynomial-Time Reduction of the Shortest S-Directed Spanning Tree Problem to Linear Programming.</b>” , <i>National Workshop in Design and Analysis of Algorithm (NWDAA)</i>, Tezpur University, India, 2010, Norosa Publishing House Pvt. Ltd, New Delhi-110002.</li><br>
+      <li><b>D.I. Mazumder</b>, D.K. Bhattacharyya and M. Dutta “<b>Mining Minimal Infrequent Intervals.</b>”, <i>International Journal of Computer Applications </i>(IJCA). 179 (35)(2018).</li><br>
+      <li><b>D.I. Mazumder</b> and Gitumani Sharma “<b>Some Discussion of Gravitational Constant and Cosmological Constant Using Bianchi Type-I Cosmological Model.</b>”, <i>International Journal of Scientific and Research Publications </i>(IJSRP), 8 (9) (2018).</li><br>
+      <li><b>D.I. Mazumder</b> and Gitumani Sharma “<b>Investigation of the Nature of the Universe and Kasner Solution on Bianchi Type V Cosmology.</b>”, <i>International Journal of Engineering Trends and Technology </i>(IJETT), 67 (10) (2019).</li><br>
+      <li><b>Dilwar I. Mazumder</b>, Somesuar K. Basisth, R. Pugalarasu and S Rajasekhran “<b>Estimating Tourist Growth at Destination Sites: A Mathematical Equation and a Connectivity Model Through Mobile Application.</b>”, <i>Baghdad Science Journal</i>21.5 (SI) (2024), 1878-1878.</li><br>
+     <li><b>Dilwar I. Mazumder</b>, Gitumani Sharma “<b>A Study on Expansion of Universe With Lyra Geometry in Bianchi Type V Space Time in Presence of Dark Energy.</b>”, <i>Theoretical and Mathematical Physics</i> Volume 223, pages 888–898 (2025)</li><br>
+     <li>S Rasappan, FS Devaraj, AN Syed, <b>D I Mazumder</b>, W Abdullah Al Majrafi  “<b>A General Safety-Aware Hybrid Multimodal Architecture for Sign Language Understanding in Automated Vehicle Interaction</b>”, <i>AI [MDPI Publisher]</i> (2026), 7(6), 200.</li><br>
+     <li>Q. S. Qassim and, <b>D. Mazumder</b> “<b> Study the Effectiveness of Existing Detection Mechanisms Against Prompt Injection in LLMs</b>”, <i>2026 International Conference on Sustainable Engineering and Digital Innovation (ICSEDI), Muscat, Oman,</i> (2026),pp. 1-8, doi: 10.1109/ICSEDI66420.2026.11568284.</li> <a href=" https://ieeexplore.ieee.org/document/11568284" target="_blank">https://ieeexplore.ieee.org/document/11568284 </a> <br>
+
+
+
+  </ol>
+ 
+
+    </div>
+
+</section>
+
+
+<section id="teaching">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Teaching</h2>
+
+    <p style="margin-top:15px;">
+    <b>Courses teaching in the current semester:</b>
+    </p>
+
+    <ul style="margin-top:10px;margin-left:25px;">
+        <li>MATH1202 Calculus-1</li>
+        <li>MATH3202 Discrete Structure </li>
+        <li>STAT4130 Probability and Statistics using R Programming</li>
+    </ul>
+
+ <p style="margin-top:15px;">
+    <b>Courses taught in the earlier semesters:</b>
+    </p>
+
+    <ul style="margin-top:10px;margin-left:25px;">
+        <li>Basic Mathematics-1</li>
+        <li>Pure Mathematics </li>
+        <li>Appllied Mathematics</li>
+        <li>Caculus-1</li>
+        <li>Calculus-2</li>
+        <li>Engineering Mathematics</li>
+        <li>Mathematics for Computing</li>
+        <li>Numerical Methods of Computing</li>
+        <li>Discrete Mathematics </li>
+        <li>Probability and Statistics</li>
+        <li>Managerial Statistics</li>
+        <li>R Programming</li>
+        <li>C and C++ Programming</li>
+    </ul>
+
+</section>
+
+<section id="experience">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Experience</h2>
+
+    <ul style="margin-top:15px;margin-left:25px;">
+        <li><b>Lecturer of Mathematics</b>, in the Suupportive Requirements Department, <b>University of Technology and Applied Science, Ibri</b>, Sultanate of Oman since <b>26 September 2011</b> to till date. My responsibilies incluses: 
+            <ol style="margin-top:10px;margin-left:35px;">
+		<li> Preparing the Course Delivery Plan(<b>CDP</b>), Preparing Course Material for both Theory and Practical based on the learning outcomes.</li><br>
+
+		<li > Academic Advising and mentoring students.</li><br>
+
+		<li > Teaching the assigned courses, Preparing Quizzes, Midterm, Final exam and Practical exams. Uploading assignment in LMS <b>Moodle</b> and creating quiz in Moodle. Checking the answerscripts of the students and giving their result on time.</li><br>
+
+         	<li > As a <b>Moodle administrator</b>, I create the all Mathematics courses for all colleagues in each semester and assign the teachers.</li><br>
+
+         	<li > All my assigned course will also be created in MsTeams for easy communication with the students.</li>
+                </li><br>
+
+	    </ol><br>
+        <li><b>Assistant Professor</b> and <b>Head of IT Department</b>, EIILM University, Sikkim, India since <b>28 July 2010 to 22 August 2011</b></li><br>
+        
+	<li><b>Teaching Assistant</b> , Tezpur University, India since <b>01 July 2009 to 30 June 2010</b></li><br>
+
+	<li><b>Post Graduate Teacher (PGT)</b>, S.D. Jain Hr. Sec. School, Dimapur Nagaland, India since <b>28 March 2006 to 31 July 2008</b></li><br>
+	
+	<li><b>Lecturer for Information Technology</b>, Epitome College, Shilpukuri, Guwahati, India since <b>16 May 2005     to 10 January 2006</b></li><br>
+	
+	<li><b>Lecturer of Mathematics</b>, iFuture Computer Education, Guwahati, India since <b>01 November 2004 to 15 May 2005</b></li><br>
+        <li><b>Lecturer of Mathematics</b>, Assam Institute of Technology, Guwahati, India since <b>31 October 2003 to         31 October 2004</b></li><br>
+
+    </ul>
+</section>
+
+<section id="academy">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Mazumder Academy</h2>
+
+    <p style="margin-top:15px;">
+    Mazumder Academy is a volunteer educational initiative for the community service, dedicated to
+    providing free, high-quality learning resources to students worldwide.
+    Through online lectures, tutorials, and educational videos, the academy
+    aims to make mathematics, science, and technology education accessible
+    to learners regardless of their geographical or economic background. 
+    For any query related to the Mazumder Academy, you can reach at the 
+    <p><b> Email: mazumderacademy@gmail.com</b></p>
+    <p><b> Phone: +96898411747</b></p>
+    </p>
+
+    <br>
+
+    <p>
+    The academy operates through the Mazumder Academy YouTube channel,
+    where students can access lectures, problem-solving sessions, exam
+    preparation materials, and educational discussions.
+    </p>
+
+    <br>
+
+    <!-- EDIT YOUTUBE LINK -->
+    <p>
+        <strong>YouTube Channel:</strong>
+        <a href="https://www.youtube.com/@MazumderAcademy2000" target="_blank">
+         https://www.youtube.com/@MazumderAcademy2000
+        </a>
+    </p>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2 style="background-color:#4CAF50; color:white; padding:10px;">Contact</h2>
+
+    <p><strong>Email:</strong> Dilwar.Mazumder@utas.edu.om; dilu.bty@gmail.com</p>
+
+    <p><strong>Office:</strong> Department of Supportive Requirements</p>
+    <p><strong>Office:</strong> Mathemtics and Science Unit</p>
+
+    <p><strong>University:</strong><a href="https://www.utas.edu.om/ibri" target="_blank"> University of Technology and Applied Sciences, Ibri</p></a>
+
+    <p><strong>Google Scholar:</strong> <a href=" https://scholar.google.com/citations?user=08UL5m8AAAAJ&hl=en" target="_blank">https://scholar.google.com/citations?user=08UL5m8AAAAJ&hl=en </a></p>
+
+    <p><strong>GitHub:</strong> <a href=" https://github.com/DilwarIMazumder" target="_blank"> https://github.com/DilwarIMazumder</a> </p>
+
+    <p><strong>ORCiD:</strong> <a href="https://orcid.org/0009-0005-6835-3026" target="_blank"> https://orcid.org/0009-0005-6835-3026</a> </p>
+    
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dr-dilwar-islam-mazumder-95888a15/" target="_blank"> https://www.linkedin.com/in/dr-dilwar-islam-mazumder-95888a15/</a> </p>
+
+
+</section>
+
+<div class="footer">
+    <p>
+        © 2026 Dr. Dilwar Islam Mazumder |<a href="https://www.facebook.com/dilwar.mazumder.3" target="_blank"> Facebook </a>|<a href="https://twitter.com/Dilu91687148" target="_blank">Twitter</a>|UTAS-Ibri | Mazumder Academy
+
+    </p>
+</div>
+
+</div>
+
+</body>
+</html>
+```
